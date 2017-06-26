@@ -1,7 +1,7 @@
 {
   "name": "petpetgo",
   "version": "0.1.0",
-  "homepage" : "http://myname.github.io/meituan",
+  "homepage" : "https://weihaiw.github.io/meituan",
   "private": true,
   "dependencies": {
     "antd": "^2.11.1",

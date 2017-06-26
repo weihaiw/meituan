@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Login from './compoments/Login.js'
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route
 } from 'react-router-dom'
 import Sign from './compoments/Sign.js'
@@ -17,7 +17,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <Router>
+        <HashRouter>
           <div className="App">
             <Route exact path="/" component={Home}/>
             <Route path="/Login" component={Login}/>
@@ -27,7 +27,7 @@ class App extends Component {
             <Route path="/my" component={My}/>     
             <Route path="/restaurant/:id" component={Ｒestaurant}/>     
           </div>      
-        </Router>
+        </HashRouter>
       </Provider>
     );
   }
